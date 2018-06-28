@@ -62,60 +62,111 @@ class ContactModal extends React.Component {
 
 
   render() {
+
+    let name, email, subject, message, cancel, submit;
+    let error = {};
+
+
+    switch(this.props.lang){
+      case 'eng':
+        name = 'Name'
+        email = 'Email'
+        subject = 'Subject'
+        message = 'Message'
+        error = {
+          name: 'Name is required',
+          email: 'Email is required',
+          subject: 'Subject is required',
+          message: 'Message is required'
+        }
+        cancel = 'Cancel'
+        submit = 'Send'
+        break;
+      case 'jp':
+        name = '名前'
+        email = 'EMAIL'
+        subject = '件名'
+        message = '本文'
+        error = {
+          name: '名前を入力してください',
+          email: 'EMAILを入力してください',
+          subject: '件名を入力してください',
+          message: '本文を入力してください'
+        }
+        cancel = 'キャンセル'
+        submit = 'メッセージを送る'
+        break;
+      case 'pl':
+        name = 'Imie'
+        email = 'Email'
+        subject = 'Temat'
+        message = 'Wiadomośc'
+        error = {
+          name: 'Wprowadź imie ',
+          email: 'Wprowadź poprawny email',
+          subject: 'Wprowadź temat ',
+          message: 'Wprowadź wiadomośc '
+        }
+        cancel = 'Anuluj'
+        submit = 'Wyślij'
+        break;
+      default:
+    }
+
     return (
         <div className={this.props.showModal ? 'modal is-active is-radiusless' : 'modal is-radiusless'}>
             <div class="modal-background"></div>
               <div class="modal-content">
               <div class="box">
                   <div class="field">
-                    <label class="label">Email</label>
+                    <label class="label">{email}</label>
                     <div class="control has-icons-left">
-                      <input onChange={this.updateEmailDetails('email')} className={!this.state.email ? 'input is-danger' : "input is-primary"} value={this.state.emailDetails.email} type="text" placeholder="E-Mail"/>
+                      <input onChange={this.updateEmailDetails('email')} className={!this.state.email ? 'input is-danger' : "input is-primary"} value={this.state.emailDetails.email} type="text" placeholder={email}/>
                       <span class="icon is-small is-left">
                         <i class="fas fa-envelope"></i>
                       </span>
                     </div>
-                    {!this.state.email ? <p class="help is-danger">Email is required</p> : null}
+                    {!this.state.email ? <p class="help is-danger">{error.email}</p> : null}
                   </div>
                   <div class="field">
-                  <label class="label">Name</label>
+                  <label class="label">{name}</label>
                     <div class="control has-icons-left">
-                      <input onChange={this.updateEmailDetails('name')} className={!this.state.email ? 'input is-danger' : "input is-primary"} value={this.state.emailDetails.name} type="text" placeholder="Name"/>
+                      <input onChange={this.updateEmailDetails('name')} className={!this.state.email ? 'input is-danger' : "input is-primary"} value={this.state.emailDetails.name} type="text" placeholder={name}/>
                       <span class="icon is-small is-left">
                         <i class="fas fa-user"></i>
                       </span>
                     </div>
-                    {!this.state.name ? <p class="help is-danger">Name is required</p> : null}
+                    {!this.state.name ? <p class="help is-danger">{error.name}</p> : null}
                   </div>
                   <div class="field">
-                  <label class="label">Subject</label>
+                  <label class="label">{subject}</label>
                     <div class="control has-icons-left">
-                      <input onChange={this.updateEmailDetails('subject')} className={!this.state.subject ? 'input is-danger' : "input is-primary"} value={this.state.emailDetails.subject} type="text" placeholder="Subject"/>
+                      <input onChange={this.updateEmailDetails('subject')} className={!this.state.subject ? 'input is-danger' : "input is-primary"} value={this.state.emailDetails.subject} type="text" placeholder={subject}/>
                       <span class="icon is-small is-left">
                         <i class="fas fa-info-circle"></i>
                       </span>
                     </div>
-                    {!this.state.subject ? <p class="help is-danger">Subject is required</p> : null}
+                    {!this.state.subject ? <p class="help is-danger">{error.subject}</p> : null}
                   </div>
                   <div class="field">
-                  <label class="label">Message</label>
+                  <label class="label">{message}</label>
                     <div class="control has-icons-left">
-                      <input onChange={this.updateEmailDetails('message')} className={!this.state.message ? 'input is-danger' : "input is-primary"} value={this.state.emailDetails.message} type="text" placeholder="Message"/>
+                      <input onChange={this.updateEmailDetails('message')} className={!this.state.message ? 'input is-danger' : "input is-primary"} value={this.state.emailDetails.message} type="text" placeholder={message}/>
                       <span class="icon is-small is-left">
                         <i class="fas fa-edit"></i>
                       </span>
                     </div>
-                    {!this.state.message ? <p class="help is-danger">Message is required</p> : null}
+                    {!this.state.message ? <p class="help is-danger">{error.message}</p> : null}
                   </div>
                   <div class="field is-grouped is-grouped-right">
                     <p class="control">
                       <button onClick={this.closeModal} class="button is-small is-radiusless is-light">
-                        CANCEL
+                        {cancel}
                       </button>
                     </p>
                     <p class="control">
                       <button onClick={this.submitEmailForm} class="button is-small is-radiusless is-dark">
-                        SUBMIT
+                        {submit}
                       </button>
                     </p>
                   </div>

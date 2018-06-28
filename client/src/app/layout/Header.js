@@ -77,7 +77,7 @@ class Header extends React.Component {
           </div>
         </div>
 
-        <ContactModal toggleModal={this.toggleModal} showModal={this.state.showModal}/>
+        <ContactModal toggleModal={this.toggleModal} showModal={this.state.showModal} lang={this.props.lang} />
 
       </nav>
     )

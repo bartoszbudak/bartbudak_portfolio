@@ -33,12 +33,22 @@ $colors: map-merge($colors, $addColors);
   background: #2bc0e4; /* Gecko Browsers */
 }
 
-.navbar, .footer{
+.navbar, .navbar-menu, .footer{
   background-image: linear-gradient(to right, #de6262, #ffb88c);
 }
 
-.hero{
+.hero.is-dark{
   background-image: linear-gradient(to right, #de6262, #ffb88c) !important;
+}
+
+.navbar-menu{
+  border-top: 1px solid white;
+}
+
+@media only screen and (min-width: 1087px){
+  .navbar-menu{
+    border-top: none;
+  }
 }
 
 a:hover{
@@ -51,5 +61,15 @@ a:hover{
 
   &:hover{
     color: #2bc0e4
+  }
+}
+
+.button.is-dark{
+  background-color: #2bc0e4;
+  opacity: .7;
+  transition: .3s;
+  &:hover{
+    opacity: 1;
+    background-color: #2bc0e4;
   }
 }
