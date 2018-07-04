@@ -61,10 +61,10 @@ class Content extends React.Component {
               <h1 className="title">
                 <span style={{marginRight: 20 + 'px'}}>{title}</span>
                 <div className="social-cont">
-                <a className="icon" href="http://www.linkedin.com/in/bartbudak">
+                <a className="icon" href="http://www.linkedin.com/in/bartbudak" target="_blank" rel="noopener noreferrer">
                   <i className="fab fa-linkedin"></i>
                 </a>
-                <a className="icon" href="http://www.github.com/bartoszbudak">
+                <a className="icon" href="http://www.github.com/bartoszbudak" target="_blank" rel="noopener noreferrer">
                     <i className="fab fa-github"></i>
                 </a>
                 </div>

@@ -9,10 +9,12 @@
     "heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
   },
   "dependencies": {
+    "bulma-extensions": "^2.2.1",
     "dotenv": "^6.0.0",
     "express": "^4.16.2",
     "jquery": "^3.3.1",
     "nodemailer": "^4.6.7",
+    "react-click-outside": "github:tj/react-click-outside",
     "sendemail": "^3.4.0"
   },
   "devDependencies": {

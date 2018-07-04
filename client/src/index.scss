@@ -1,21 +1,9 @@
-// 1. Import the initial variables
 @import "bulma/sass/utilities/initial-variables";
 @import "bulma/sass/utilities/functions";
-
-// 2. Setup your Custom Colors
-$purple: hsl(275,87%,45%);
-$purple-invert: findColorInvert($purple);
-
-// 3. Add new color variables to the color map.
 @import "bulma/sass/utilities/derived-variables.sass";
-
-$addColors: (
-  "purple":($purple, $purple-invert),
-);
-
-$colors: map-merge($colors, $addColors);
-
 @import 'bulma/bulma';
+@import "bulma-extensions/bulma-divider/src/sass/index.sass";
+
 
 
 .navbar-burger, .navbar-burger:hover{
@@ -53,14 +41,6 @@ $colors: map-merge($colors, $addColors);
   }
 }
 
-@media only screen and (max-width: 768px){
-  .project-cont{
-    border-top: 1px solid #476991;
-    border-bottom: 1px solid #476991;
-  }
-}
-
-
 a:hover{
   color: white !important;
 }
@@ -85,7 +65,7 @@ a:hover{
 }
 
 .me-circle{
-  border: 2px solid #476991;
+  border: 4px solid #476991;
   border-radius:50%;
 }
 
@@ -96,7 +76,7 @@ a:hover{
 
 .project-circle{
   border-radius: 65px;
-  border: 2px solid #476991;
+  border: 4px solid #476991;
 
   img{
     border-radius: 50%;
@@ -122,7 +102,7 @@ a:hover{
   }
 }
  
-.about-cont .svg-inline--fa, #proj .svg-inline--fa{
+.about-cont .svg-inline--fa, #proj .svg-inline--fa, #profProj .svg-inline--fa{
   height: 2em;
   width: 2em !important;
   color: #476991;
@@ -143,6 +123,39 @@ a:hover{
   }
 }
 
-#proj .hero{
+#proj .hero-body, #profProj .hero-body{
   padding-top: 0;
+  padding-bottom: 0;
+}
+
+#profProj{
+  margin-bottom: 6em !important;
+}
+
+.is-svg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-align: center;
+  transition: .3s;
+
+  img{
+    border-radius: 0;
+    width: 90%;
+  }
+
+  &:hover{
+    background: #476991;
+  }
+}
+
+.is-svg img:last-child {
+  display: none;  
+}
+.is-svg:hover img:last-child {
+  display: flex;  
+}
+.is-svg:hover img:first-child {
+  display: none;  
 }
