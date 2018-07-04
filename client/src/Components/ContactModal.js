@@ -115,64 +115,64 @@ class ContactModal extends React.Component {
 
     return (
         <div className={this.props.showModal ? 'modal is-active is-radiusless' : 'modal is-radiusless'}>
-            <div class="modal-background"></div>
-              <div class="modal-content">
-              <div class="box">
-                  <div class="field">
-                    <label class="label">{email}</label>
-                    <div class="control has-icons-left">
+            <div className="modal-background"></div>
+              <div className="modal-content">
+              <div className="box">
+                  <div className="field">
+                    <label className="label">{email}</label>
+                    <div className="control has-icons-left">
                       <input onChange={this.updateEmailDetails('email')} className={!this.state.email ? 'input is-danger' : "input is-primary"} value={this.state.emailDetails.email} type="text" placeholder={email}/>
-                      <span class="icon is-small is-left">
-                        <i class="fas fa-envelope"></i>
+                      <span className="icon is-small is-left">
+                        <i className="fas fa-envelope"></i>
                       </span>
                     </div>
-                    {!this.state.email ? <p class="help is-danger">{error.email}</p> : null}
+                    {!this.state.email ? <p className="help is-danger">{error.email}</p> : null}
                   </div>
-                  <div class="field">
-                  <label class="label">{name}</label>
-                    <div class="control has-icons-left">
+                  <div className="field">
+                  <label className="label">{name}</label>
+                    <div className="control has-icons-left">
                       <input onChange={this.updateEmailDetails('name')} className={!this.state.email ? 'input is-danger' : "input is-primary"} value={this.state.emailDetails.name} type="text" placeholder={name}/>
-                      <span class="icon is-small is-left">
-                        <i class="fas fa-user"></i>
+                      <span className="icon is-small is-left">
+                        <i className="fas fa-user"></i>
                       </span>
                     </div>
-                    {!this.state.name ? <p class="help is-danger">{error.name}</p> : null}
+                    {!this.state.name ? <p className="help is-danger">{error.name}</p> : null}
                   </div>
-                  <div class="field">
-                  <label class="label">{subject}</label>
-                    <div class="control has-icons-left">
+                  <div className="field">
+                  <label className="label">{subject}</label>
+                    <div className="control has-icons-left">
                       <input onChange={this.updateEmailDetails('subject')} className={!this.state.subject ? 'input is-danger' : "input is-primary"} value={this.state.emailDetails.subject} type="text" placeholder={subject}/>
-                      <span class="icon is-small is-left">
-                        <i class="fas fa-info-circle"></i>
+                      <span className="icon is-small is-left">
+                        <i className="fas fa-info-circle"></i>
                       </span>
                     </div>
-                    {!this.state.subject ? <p class="help is-danger">{error.subject}</p> : null}
+                    {!this.state.subject ? <p className="help is-danger">{error.subject}</p> : null}
                   </div>
-                  <div class="field">
-                  <label class="label">{message}</label>
-                    <div class="control has-icons-left">
+                  <div className="field">
+                  <label className="label">{message}</label>
+                    <div className="control has-icons-left">
                       <input onChange={this.updateEmailDetails('message')} className={!this.state.message ? 'input is-danger' : "input is-primary"} value={this.state.emailDetails.message} type="text" placeholder={message}/>
-                      <span class="icon is-small is-left">
-                        <i class="fas fa-edit"></i>
+                      <span className="icon is-small is-left">
+                        <i className="fas fa-edit"></i>
                       </span>
                     </div>
-                    {!this.state.message ? <p class="help is-danger">{error.message}</p> : null}
+                    {!this.state.message ? <p className="help is-danger">{error.message}</p> : null}
                   </div>
-                  <div class="field is-grouped is-grouped-right">
-                    <p class="control">
-                      <button onClick={this.closeModal} class="button is-small is-radiusless is-light">
+                  <div className="field is-grouped is-grouped-right">
+                    <p className="control">
+                      <button onClick={this.closeModal} className="button is-small is-radiusless is-light">
                         {cancel}
                       </button>
                     </p>
-                    <p class="control">
-                      <button onClick={this.submitEmailForm} class="button is-small is-radiusless is-dark">
+                    <p className="control">
+                      <button onClick={this.submitEmailForm} className="button is-small is-radiusless is-dark">
                         {submit}
                       </button>
                     </p>
                   </div>
                 </div>
             </div>
-            <button onClick={this.props.toggleModal} class="modal-close is-large" aria-label="close"></button>
+            <button onClick={this.props.toggleModal} className="modal-close is-large" aria-label="close"></button>
         </div>
 
     )

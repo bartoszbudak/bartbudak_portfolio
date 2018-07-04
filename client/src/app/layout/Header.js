@@ -3,6 +3,8 @@
 //===========//
 import React from 'react'
 import ContactModal from '../../Components/ContactModal'
+import $ from 'jquery'
+
 
 class Header extends React.Component {
 
@@ -25,6 +27,20 @@ class Header extends React.Component {
     this.setState(prevState => ({
       isActive: !prevState.isActive
     }))
+  }
+
+  handleScrollToElement = (event) => {
+    event.preventDefault();
+    let scrollSection;
+    console.log(event.target)
+    if(event.target.id === 'about-href'){
+      scrollSection = $('#about')
+    } else{
+      scrollSection = $('#proj')
+    }
+    scrollSection[0].scrollIntoView({ 
+      behavior: 'smooth' 
+    });
   }
 
   render() {
@@ -65,10 +81,10 @@ class Header extends React.Component {
         </div>
         <div className={ this.state.isActive ? 'navbar-menu is-active' : 'navbar-menu'}>
           <div className="navbar-end navbar-menu-override">
-            <div className="navbar-item" href="">
+            <div className="navbar-item" onClick={this.handleScrollToElement} id="about-href" href="">
               {about}
             </div>
-            <div className="navbar-item" href="">
+            <div className="navbar-item" onClick={this.handleScrollToElement} id="proj-href" href="">
               {projects}
             </div>            
             <div className="navbar-item" onClick={this.toggleModal}>

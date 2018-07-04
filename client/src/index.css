@@ -6637,12 +6637,14 @@ label.panel-block {
   font-family: 'Lato', sans-serif; }
 
 ::selection {
-  background: #2bc0e4;
-  /* WebKit/Blink Browsers */ }
+  background: #476991;
+  /* WebKit/Blink Browsers */
+  color: white; }
 
 ::-moz-selection {
-  background: #2bc0e4;
-  /* Gecko Browsers */ }
+  background: #476991;
+  /* Gecko Browsers */
+  color: white; }
 
 .navbar, .navbar-menu, .footer {
   background-image: linear-gradient(to right, #de6262, #ffb88c); }
@@ -6657,6 +6659,11 @@ label.panel-block {
   .navbar-menu {
     border-top: none; } }
 
+@media only screen and (max-width: 768px) {
+  .project-cont {
+    border-top: 1px solid #476991;
+    border-bottom: 1px solid #476991; } }
+
 a:hover {
   color: white !important; }
 
@@ -6664,12 +6671,57 @@ a:hover {
   color: white;
   cursor: pointer; }
   .navbar-menu-override .navbar-item:hover {
-    color: #2bc0e4; }
+    color: #476991; }
 
 .button.is-dark {
-  background-color: #2bc0e4;
+  background-color: #476991;
   opacity: .7;
   transition: .3s; }
   .button.is-dark:hover {
     opacity: 1;
-    background-color: #2bc0e4; }
+    background-color: #476991; }
+
+.me-circle {
+  border: 2px solid #476991;
+  border-radius: 50%; }
+
+.project-circle {
+  border-radius: 65px;
+  border: 2px solid #476991; }
+  .project-circle img {
+    border-radius: 50%; }
+
+.project-pill {
+  border-radius: 50px;
+  border: 2px solid #476991;
+  text-align: center;
+  height: 65px;
+  width: 250px;
+  padding: 5px;
+  transition: .3s;
+  cursor: pointer;
+  color: #476991;
+  font-weight: bold; }
+  .project-pill:hover {
+    border-color: #476991;
+    color: white;
+    background: #476991; }
+
+.about-cont .svg-inline--fa, #proj .svg-inline--fa {
+  height: 2em;
+  width: 2em !important;
+  color: #476991; }
+
+.about-cont {
+  color: #476991; }
+
+.social-cont {
+  margin-top: 10px;
+  display: inline-block;
+  position: relative;
+  top: 5px; }
+  .social-cont a {
+    margin-right: 20px; }
+
+#proj .hero {
+  padding-top: 0; }
