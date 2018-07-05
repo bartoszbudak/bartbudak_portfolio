@@ -55,10 +55,10 @@ class About extends React.Component {
                             <div class="is-divider" data-content="ABOUT"></div>
 
                             <li>
-                                Bart Budak is a web and application developer based out of Central NJ. He is currently working at Optum Technology division of UnitedHealth Group.
+                                Bart Budak is a web and application developer based out of Central NJ. He is currently working at the Optum Technology division of UnitedHealth Group.
                                 <br />
                                 <br />
-                                He developed a passion for UI/UX after enter UHG's Technology Development Program where he quickly rose through the ranks and accquired a senior and tech lead position. During his time at UHG, Bart formed a Web Development and UI/UX focused interest group, Design &amp; Develop, where he regularly holds lessons and open forums on the newest and greatest in modern web development and design.
+                                He developed a passion for UI/UX after entering UHG's Technology Development Program where he quickly rose through the ranks and accquired a senior and tech lead position. During his time at UHG, Bart formed a Web Development and UI/UX focused interest group, Design &amp; Develop, where he regularly holds lessons and open forums on the latest and greatest in modern web development and design.
                             </li>
                             <br />
                             <li className="resume">

@@ -30,8 +30,8 @@ class Layout extends React.Component {
       <Helmet
         title="Bart Budak"
         meta={[
-          { name: 'description', content: 'Bart Budak\'s porfolio'},
-          { name: 'keywords', content: 'resume, blog, porfolio, bart budak' },
+          { name: 'description', content: 'Bart Budak\'s portolio'},
+          { name: 'keywords', content: 'resume, blog, portfolio, bart budak' },
         ]}
         script={[
           { 'src': 'https://use.fontawesome.com/releases/v5.0.4/js/all.js'},
