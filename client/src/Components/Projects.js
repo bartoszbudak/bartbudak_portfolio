@@ -108,7 +108,7 @@ class Projects extends React.Component {
         </section>
         <section className="hero" id="profProj">
         <div className="hero-body">
-          <div class="is-divider" data-content="PROFESSIONAL PROJECTS (CLICK/TAP TO VIEW)"></div>
+          <div class="is-divider" data-content="PROFESSIONAL PROJECTS"></div>
 
             <div className="container">
 
@@ -195,7 +195,7 @@ class Projects extends React.Component {
             </div>
           </div> */}
         </section>
-        <div className={this.state.isActive2 ? 'modal is-active is-radiusless' : 'modal is-radiusless'}>
+        {/* <div className={this.state.isActive2 ? 'modal is-active is-radiusless' : 'modal is-radiusless'}>
             <div className="modal-background"></div>
             <div className="modal-content">
                 <p className="image">
@@ -212,7 +212,7 @@ class Projects extends React.Component {
                 </p>
             </div>
         <button className="modal-close is-large" onClick={this.toggleProj1} aria-label="close"></button>
-        </div> 
+        </div>  */}
       </section>
 
 
