@@ -52,7 +52,8 @@ class About extends React.Component {
                 <div className="column is-two-thirds" style={{textAlign: 'justify'}}>
                     <div>
                         <ul>
-                            <br />
+                            <div class="is-divider" data-content="ABOUT"></div>
+
                             <li>
                                 Bart Budak is a web and application developer based out of Central NJ. He is currently working at Optum Technology division of UnitedHealth Group.
                                 <br />
@@ -60,7 +61,12 @@ class About extends React.Component {
                                 He developed a passion for UI/UX after enter UHG's Technology Development Program where he quickly rose through the ranks and accquired a senior and tech lead position. During his time at UHG, Bart formed a Web Development and UI/UX focused interest group, Design &amp; Develop, where he regularly holds lessons and open forums on the newest and greatest in modern web development and design.
                             </li>
                             <br />
-                            <li>
+                            <li className="resume">
+                                 <a className="button is-link is-small is-radiusless" alt="" href="https://drive.google.com/file/d/1pTwCpXwsDbb6nuiHCJ_3qElSpL05eiEI/view?usp=sharing" target="_blank" rel="noopener noreferrer">RESUME</a> 
+                            </li>
+                            <div class="is-divider" data-content="TECH"></div>
+                            <li className="tech"> 
+
                                 <span className="icon is-large">
                                     <i className="fab fa-angular"></i>
                                 </span>
@@ -88,7 +94,10 @@ class About extends React.Component {
                                 <span className="icon is-large">
                                     <i className="fab fa-github-square"></i>
                                 </span>
+
+            
                             </li>
+
                         </ul>
                     </div>
                 </div>
@@ -96,7 +105,7 @@ class About extends React.Component {
             </div>
           </div>
         </section>
- 
+
       </section>
         
     )

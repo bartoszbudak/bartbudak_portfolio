@@ -6814,3 +6814,9 @@ a:hover {
 
 .is-svg:hover img:first-child {
   display: none; }
+
+a.is-link {
+  background-color: #476991 !important; }
+
+.tech, .resume {
+  text-align: center; }
