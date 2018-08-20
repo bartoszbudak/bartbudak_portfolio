@@ -62,7 +62,7 @@ class About extends React.Component {
                             </li>
                             <br />
                             <li className="resume">
-                                 <a className="button is-link is-small is-radiusless" alt="" href="https://drive.google.com/file/d/1pTwCpXwsDbb6nuiHCJ_3qElSpL05eiEI/view?usp=sharing" target="_blank" rel="noopener noreferrer">RESUME</a> 
+                                 <a className="button is-link is-radiusless" alt="" href="https://drive.google.com/file/d/0B71klMpcGRmYMV9adXhVYW1sWWhWT3A5dGdrWXpqWkVKNlY0/view?usp=sharing" target="_blank" rel="noopener noreferrer">RESUME</a> 
                             </li>
                             <div class="is-divider" data-content="TECH"></div>
                             <li className="tech"> 
