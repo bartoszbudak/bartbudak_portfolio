@@ -12,6 +12,7 @@
 
 *{
   font-family: 'Lato', sans-serif;
+  color: grey;
 }
 
 ::selection {
@@ -23,13 +24,13 @@
   color: white;
 }
 
-.navbar, .navbar-menu, .footer{
-  background-image: linear-gradient(to right, #de6262, #ffb88c);
-}
+// .navbar, .navbar-menu, .footer{
+//   background-image: linear-gradient(to right, #de6262, #ffb88c);
+// }
 
-.hero.is-dark{
-  background-image: linear-gradient(to right, #de6262, #ffb88c) !important;
-}
+// .hero.is-dark{
+//   background-image: linear-gradient(to right, #de6262, #ffb88c) !important;
+// }
 
 .navbar-menu{
   border-top: 1px solid white;
@@ -41,12 +42,16 @@
   }
 }
 
+.subtitle{
+  color: grey !important;
+}
+
 a:hover{
-  color: white !important;
+  color: silver !important;
 }
 
 .navbar-menu-override .navbar-item{
-  color: white;
+  color: grey;
   cursor: pointer;
 
   &:hover{
@@ -55,17 +60,17 @@ a:hover{
 }
 
 .button.is-dark{
-  background-color: #476991;
+  background-color: grey;
   opacity: .7;
   transition: .3s;
   &:hover{
     opacity: 1;
-    background-color: #476991;
+    background-color: grey;
   }
 }
 
 .me-circle{
-  border: 4px solid #476991;
+  border: 3px solid grey;
   border-radius:50%;
 }
 
@@ -76,7 +81,7 @@ a:hover{
 
 .project-circle{
   border-radius: 65px;
-  border: 4px solid #476991;
+  border: 3px solid grey;
 
   img{
     border-radius: 50%;
@@ -85,7 +90,7 @@ a:hover{
 
 .project-pill{
   border-radius: 50px;
-  border: 2px solid #476991;
+  border: 2px solid grey;
   text-align: center;
   height: 65px;
   width: 250px;
@@ -105,12 +110,8 @@ a:hover{
 .about-cont .svg-inline--fa, #proj .svg-inline--fa, #profProj .svg-inline--fa{
   height: 2em;
   width: 2em !important;
-  color: #476991;
 }
 
-.about-cont{
-  color: #476991;
-}
 
 .social-cont{
   margin-top: 10px;
@@ -161,9 +162,13 @@ a:hover{
 }
 
 a.is-link{
-  background-color: #476991 !important;
+  background-color: grey !important;
 }
 
 .tech, .resume{
   text-align: center;
+}
+
+a{
+  color: grey;
 }

@@ -47,25 +47,26 @@ class Projects extends React.Component {
                     <div className="column is-two-fifths"> 
                         <div>
                             <figure className="image is-128x128 project-circle">
-                                <img src="img/wk.png" alt=""/>
+                                <img src="img/squarelogo.svg" alt=""/>
                             </figure>
                         </div>
                     </div>
                     <div className="column is-one-forth"> 
                         <ul>
                             <li>
-                            WaniKani Viewer
+                            homestay clothing
                             </li>
                             <li>
                                 <span className="icon is-large">
-                                        <i className="fab fa-angular"></i>
+                                        <i className="fab fa-vuejs"></i>
                                     </span>
                                     <span className="icon is-large">
                                         <i className="fab fa-node-js"></i>
                                     </span>
                             </li>
                             <li>
-                            Personalized dashboard for the Japanese learning application, WaniKani.
+                            Owner/Designer of homestay clothing <br/>
+                            Japanese-minimalism-inpsired casual wear
                             </li>
                         </ul>
                     </div>
@@ -95,7 +96,8 @@ class Projects extends React.Component {
                                     </span>
                             </li>
                             <li>
-                            Band website for the Central Jersey based J-Rock group, Star Drop.
+                            
+                            Webmaster for the Central Jersey based J-Rock group, Star Drop
                             </li>
                         </ul>
                     </div>
@@ -137,7 +139,8 @@ class Projects extends React.Component {
                                     </span>
                             </li>
                             <li>
-                            Main landing page of the My Practice Profile application which is used by providers within the Unitedhealth Group network to ensure data accuracy.
+                                Lead developer of My Practice Profile. Application tailored for medical practitioners <br />
+                                Improved NPS by 35 points
                             </li>
                         </ul>
                     </div>
@@ -166,7 +169,7 @@ class Projects extends React.Component {
                      
                             </li>
                             <li>
-                            Home page mock up for a patient health dashboard android application
+                             UX Designer of patient health dashboard android application
                             </li>
                         </ul>
                     </div>

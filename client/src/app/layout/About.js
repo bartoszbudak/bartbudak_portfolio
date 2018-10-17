@@ -45,7 +45,7 @@ class About extends React.Component {
                 <div className="column is-one-third">
                     <div>
                         <figure className="image me-circle-cont">
-                            <img className="me-circle" src="img/me.jpeg" alt=""/>
+                            <img className="me-circle" src="img/me.jpg" alt=""/>
                         </figure>
                     </div>
                 </div>
@@ -72,6 +72,9 @@ class About extends React.Component {
                                 </span>
                                 <span className="icon is-large">
                                     <i className="fab fa-react"></i>
+                                </span>
+                                <span className="icon is-large">
+                                    <i className="fab fa-vuejs"></i>
                                 </span>
                                 <span className="icon is-large">
                                     <i className="fab fa-html5"></i>

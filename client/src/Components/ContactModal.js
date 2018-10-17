@@ -151,7 +151,7 @@ class ContactModal extends React.Component {
                   <div className="field">
                   <label className="label">{message}</label>
                     <div className="control has-icons-left">
-                      <input onChange={this.updateEmailDetails('message')} className={!this.state.message ? 'input is-danger' : "input is-primary"} value={this.state.emailDetails.message} type="text" placeholder={message}/>
+                      <input onChange={this.updateEmailDetails('message')} className={!this.state.message ? 'textarea is-danger' : "textarea is-primary"} value={this.state.emailDetails.message} type="text" placeholder={message}/>
                       <span className="icon is-small is-left">
                         <i className="fas fa-edit"></i>
                       </span>

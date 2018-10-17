@@ -55,7 +55,7 @@ class Content extends React.Component {
 
     return (
       <section>
-        <section className="hero is-dark is-bold header-cont">
+        <section className="hero is-bold header-cont">
           <div className="hero-body">
             <div className="container">
               <h1 className="title">
