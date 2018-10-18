@@ -67,6 +67,8 @@ class Projects extends React.Component {
                             <li>
                             Owner/Designer of homestay clothing <br/>
                             Japanese-minimalism-inpsired casual wear
+                            <br/>
+                            <a href="https://www.homestayclothing.com" rel="noopener noreferrer" target="_blank" >homestayclothing.com</a>
                             </li>
                         </ul>
                     </div>

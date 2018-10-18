@@ -172,3 +172,11 @@ a.is-link{
 a{
   color: grey;
 }
+
+@media screen and (max-width: 779px){
+  .columns div{
+    display: grid;
+    place-items: center;
+    text-align: center;
+  }
+}
