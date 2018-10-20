@@ -66,7 +66,7 @@ class Projects extends React.Component {
                             </li>
                             <li>
                             Owner/Designer of homestay clothing <br/>
-                            Japanese-minimalism-inpsired casual wear
+                            Japanese-minimalism-inspired casual wear
                             <br/>
                             <a href="https://www.homestayclothing.com" rel="noopener noreferrer" target="_blank" >homestayclothing.com</a>
                             </li>
@@ -98,7 +98,6 @@ class Projects extends React.Component {
                                     </span>
                             </li>
                             <li>
-                            
                             Webmaster for the Central Jersey based J-Rock group, Star Drop
                             </li>
                         </ul>
@@ -171,7 +170,7 @@ class Projects extends React.Component {
                      
                             </li>
                             <li>
-                             UX Designer of patient health dashboard android application
+                             UX Designer of patient health dashboard mobile application
                             </li>
                         </ul>
                     </div>
